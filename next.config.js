@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: "/nextjs-github-pages",
+  basePath: '/nextjs-github-pages',
   images: {
     unoptimized: true,
-  },
+  }
 }
 
 module.exports = nextConfig
