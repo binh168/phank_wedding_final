@@ -5,8 +5,9 @@ const nextConfig = {
     basePath: "/nextjs-github-pages",
     assetPrefix: 'https://binh168.github.io/phank_wedding_final/',
     images: {
-        unoptimized: true,
-        domains: ['binh168.github.io/phank_wedding_final']
+        // unoptimized: true,
+        loader: 'imgix',
+        path: 'leorio-649772974.imgix.net',
     }
 }
 
