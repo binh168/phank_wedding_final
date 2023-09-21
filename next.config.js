@@ -1,8 +1,9 @@
+const env = process.env;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // reactStrictMode: true,
     output: 'export',
-    basePath: "/phank_wedding_final",
+    basePath: env.NEXT_PUBLIC_BASE_PATH,
     // assetsPrefix: "https://binh168.github.io/phank_wedding_final/",
     images: {
         unoptimized: true,

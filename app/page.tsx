@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -17,7 +16,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/phank_wedding_final/images/vercel.svg"
+              src={process.env.NEXT_PUBLIC_BASE_PATH + `/images/vercel.svg`}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -31,7 +30,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/phank_wedding_final/images/next.svg"
+          src={process.env.NEXT_PUBLIC_BASE_PATH + `/images/next.svg`}
           alt="Next.js Logo"
           width={180}
           height={37}
